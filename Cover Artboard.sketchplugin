@@ -1,12 +1,11 @@
 //(control f)
 //Expands a layer to cover an artboard
 
-var layer = selection[0];
-var layerFrame = [layer frame];
-var artboard = [[doc currentPage] currentArtboard] || [doc currentPage];
+var layer = selection[0]
+var artboard = [[doc currentPage] currentArtboard] || [doc currentPage]
 
 //Fill the artboard
-[layerFrame setX:0];
-[layerFrame setY:0];
-[layerFrame setWidth:[[artboard frame] width]];
-[layerFrame setHeight:[[artboard frame] height]];
+[[layer frame] setX:0]
+[[layer frame] setY:0]
+[[layer frame] setWidth:[[artboard frame] width]]
+[[layer frame] setHeight:[[artboard frame] height]]
