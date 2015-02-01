@@ -1,11 +1,13 @@
 //(control f)
 //Expands a layer to cover an artboard
 
-var layer = selection[0]
-var artboard = [[doc currentPage] currentArtboard] || [doc currentPage]
+if ([selection count] == 1) {
+    var layer = selection[0]
+    var artboard = [[doc currentPage] currentArtboard] || [doc currentPage]
 
-//Fill the artboard
-[[layer frame] setX:0]
-[[layer frame] setY:0]
-[[layer frame] setWidth:[[artboard frame] width]]
-[[layer frame] setHeight:[[artboard frame] height]]
+    //Fill the artboard
+    [[layer frame] setX:0]
+    [[layer frame] setY:0]
+    [[layer frame] setWidth:[[artboard frame] width]]
+    [[layer frame] setHeight:[[artboard frame] height]]
+}
