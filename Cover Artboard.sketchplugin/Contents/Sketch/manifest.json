@@ -2,10 +2,12 @@
   "name" : "Cover Artboard",
   "description" : "Resizes the selected layer to cover its containing artboard",
   "author": "Seb Jachec",
-  "authorEmail" : "sjachec1@gmail.com",
+  "authorEmail" : "hi@sebj.me",
+  "homepage": "https://github.com/sebj/Cover-Artboard",
   "version": 1.0,
-  "identifier": "me.sebj.cover-artboard",
+  "bundleVersion": 1.0,
   "compatibleVersion": 3.3,
+  "identifier": "me.sebj.cover-artboard",
   "commands" : [
     {
       "script" : "script.cocoascript",
@@ -19,7 +21,6 @@
     "isRoot": true,
     "items" : [
       "cover-artboard"
-    ],
-    "title" : "Cover Artboard"
+    ]
   }
 }
